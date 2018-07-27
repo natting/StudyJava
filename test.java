@@ -63,5 +63,20 @@ public class HelloWorld {
        	System.out.println(map.get("people"));
         System.out.println(map.get("baseball"));
         
+        String[] numbers = {"one", "two", "three"};
+        int[] marks = {90, 25, 67, 45, 80};
+        
+        String[] numbers = {"one", "two", "three"};
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.println(numbers[i]);
+        }
+        
+        for (int i = 0; i < marks.length; i++) {
+            if (marks[i] >= 60) {
+                System.out.println((i+1)+"번 학생은 합격입니다.");
+            }else {
+                System.out.println((i+1)+"번 학생은 불합격입니다.");
+            }
+        }
     }
 }
