@@ -56,17 +56,32 @@ public class HelloWorld {
         System.out.println(pitches.get(2));
         
         //HashMap key, value
+        // method : put, get, containsKey, remove, size, 
         HashMap<String, String> map = new HashMap<String, String>();
         map.put("people", "사람");
         map.put("baseball", "야구");
         System.out.println(map.containsKey("baseball"));
        	System.out.println(map.get("people"));
         System.out.println(map.get("baseball"));
+        map.put("football", "soccer");
+        System.out.println(map.size());
+        System.out.println(map.remove("people"));
+        System.out.println(map.size());
         
+        ArrayList<String> pocket = new ArrayList<String>();
+        pocket.add("paper");
+        pocket.add("handphone");
+        pocket.add("money");
+
+        if (pocket.contains("money")) {
+            System.out.println("택시를 타고 가라");
+        }else {
+            System.out.println("걸어가라");
+        }
+
         String[] numbers = {"one", "two", "three"};
         int[] marks = {90, 25, 67, 45, 80};
         
-        String[] numbers = {"one", "two", "three"};
         for (int i = 0; i < numbers.length; i++) {
             System.out.println(numbers[i]);
         }
